@@ -217,7 +217,7 @@
 
         game_type: game_type {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            #binding-cells = <0>
             bindings = <&kp ENTER &to 7>;
             label = "GAME_TYPE";
         };

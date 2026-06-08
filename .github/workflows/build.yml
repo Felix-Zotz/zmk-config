@@ -11,5 +11,4 @@ jobs:
     with:
       keymap_patterns: "config/*.keymap"
       output_folder: "img"
-      install_adapter: "zmk"
       commit_message: "Draw: ${{ github.event.head_commit.message }}"
