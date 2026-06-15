@@ -131,6 +131,12 @@
             require-prior-idle-ms = <50>;
             layers = <0>;
         };
+
+        combo_game {
+            bindings = <&tog Game>;
+            key-positions = <38 39 40>;
+            timeout-ms = <30>;
+        };
     };
 
     macros {
