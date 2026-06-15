@@ -217,7 +217,7 @@
 
         game_type: game_type {
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>
+            #binding-cells = <0>;
             bindings = <&kp ENTER &to 7>;
             label = "GAME_TYPE";
         };
@@ -240,7 +240,7 @@
 &kp ESCAPE  &hm LSHFT N  &hm LCTRL R  &hm LMETA T    &hm LALT S   &kp G        &kp Y        &hm RALT H  &hm RMETA A   &hm RCTRL E  &hm RSHFT I  &kp COMMA
 &kp LPAR    &kp Q        &kp X        &kp M          &kp C        &kp V        &kp K        &kp P       &kp DOT       &kp MINUS    &kp SLASH    &kp RPAR
                                       &kp BACKSPACE  &lt 3 SPACE  &kp ENTER    &lt 6 SPACE  &lt 2 TAB   &lt 1 DELETE
-            >;
+            >;                            
         };
 
         Media {
