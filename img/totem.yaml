@@ -1,0 +1,322 @@
+layout: {zmk_keyboard: totem}
+layers:
+  Base:
+  - [B, L, D, W, Z, '''', F, O, U, J, Game, ESCAPE]
+  - - {t: N, h: LSHFT}
+    - {t: R, h: LCTRL}
+    - {t: T, h: LMETA}
+    - {t: S, h: LALT}
+    - G
+    - Y
+    - {t: H, h: RALT}
+    - {t: A, h: RMETA}
+    - {t: E, h: RCTRL}
+    - {t: I, h: RSHFT}
+    - ','
+    - (
+  - [Q, X, M, C, V, K, P, ., '-', /, ), BACKSPACE]
+  - - {t: SPACE, h: NumSym}
+    - ENTER
+    - {t: SPACE, h: '6'}
+    - {t: TAB, h: Nav}
+    - {t: DELETE, h: Media}
+  Media:
+  - - {t: ▽, type: trans}
+    - '&msc SCRL_DOWN'
+    - '&fsh'
+    - '&msc SCRL_UP'
+    - BRI UP
+    - {t: ▽, type: trans}
+    - MUTE
+    - VOL UP
+    - VOL UP
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - '&msc SCRL_LEFT'
+    - '&mmv MOVE_LEFT'
+    - '&mmv MOVE_UP'
+    - '&mmv MOVE_RIGHT'
+    - '&msc SCRL_RIGHT'
+    - {t: ▽, type: trans}
+    - PREV
+    - PP
+    - STOP
+    - NEXT
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '&mmv MOVE_DOWN'
+    - {t: ▽, type: trans}
+    - BRI DEC
+    - {t: ▽, type: trans}
+    - MUTE
+    - VOL DN
+    - VOL DN
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '&mkp MB2'
+  - - '&mkp MB1'
+    - '&mkp MB3'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+  Nav:
+  - - {t: ▽, type: trans}
+    - Ctl+RIGHT
+    - {t: ▽, type: trans}
+    - Sft+Ctl+V
+    - Ctl+LEFT
+    - {t: ▽, type: trans}
+    - END
+    - PG UP
+    - Ctl+C
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '{'
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - CAPS
+    - LEFT
+    - DOWN
+    - UP
+    - RIGHT
+    - '}'
+    - '['
+  - - {t: ▽, type: trans}
+    - DEL
+    - {t: ▽, type: trans}
+    - PG DN
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - HOME
+    - <
+    - '>'
+    - Ctl+F
+    - ']'
+    - {t: ▽, type: trans}
+  - - {t: _, s: '-'}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+  NumSym:
+  - - Gui+1
+    - Gui+2
+    - Gui+3
+    - Gui+4
+    - Gui+5
+    - Gui+6
+    - Gui+7
+    - Gui+8
+    - Gui+9
+    - '-'
+    - {t: ▽, type: trans}
+    - '='
+  - - {t: '9', h: LSHFT}
+    - '7'
+    - '0'
+    - '3'
+    - F3
+    - {t: F1, s: F11}
+    - '1'
+    - '2'
+    - '4'
+    - {t: '8', h: RSHFT}
+    - '`'
+    - {t: ▽, type: trans}
+  - - F9
+    - F7
+    - F10
+    - '5'
+    - F5
+    - F6
+    - '6'
+    - {t: F2, s: F12}
+    - F4
+    - F8
+    - \
+    - {t: ▽, type: trans}
+  - - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  Game:
+  - - B
+    - L
+    - D
+    - W
+    - Z
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - ESCAPE
+  - - N
+    - R
+    - T
+    - S
+    - G
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - (
+  - - Q
+    - X
+    - M
+    - C
+    - V
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - BACKSPACE
+  - - SPACE
+    - {t: ENTER, h: Gameplus}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  Gameplus:
+  - - '1'
+    - '2'
+    - '3'
+    - '4'
+    - O
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - ESC
+  - - N
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - M
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '&game_type'
+  - - TAB
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - K
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - ESCAPE
+  - - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  '6':
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '&accs U'
+    - '&accd U'
+    - '&acce U'
+    - '&acce O'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: '&accs A', h: LSHIFT}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '&accs E'
+    - '&accs I'
+    - {t: '&accd O', h: LEFT SHIFT}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '&accs O'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  GameType:
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '&game_type_exit ESC'
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - '&game_type_exit ENTER'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+combos:
+- p: [12, 21]
+  k: '&caps_word'
+  l: [Base]
+- p: [38, 39, 40]
+  k: {t: Game, h: toggle}
