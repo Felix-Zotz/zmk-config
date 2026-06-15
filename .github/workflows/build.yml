@@ -11,5 +11,6 @@ jobs:
     with:
       keymap_patterns: "config/*.keymap"
       output_folder: "img"
-      parse_args: "totem:'-c 12'"
+      parse_args: "totem:'-c 12' totem_de:'-c 12'"
+      draw_args: "totem:'-j config/info.json' totem_de:'-j config/info.json'"
       commit_message: "Draw: ${{ github.event.head_commit.message }}"
