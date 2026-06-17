@@ -59,6 +59,15 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
+        fsu_de: flip_shift_underscore_de {
+            compatible = "zmk,behavior-mod-morph";
+            label = "FLIP_SHIFT_UNDERSCORE_DE";
+            bindings = <&kp DE_UNDER>, <&kp DE_MINUS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
         f1s: f1or11 {
             compatible = "zmk,behavior-mod-morph";
             label = "F1OR11";
@@ -172,7 +181,7 @@
 &kp ESCAPE  &hm LMETA N  &hm LALT R  &hm LSHFT T    &hm LCTRL S   &kp G        &kp Y        &hm RCTRL H  &hm RSHFT A   &hm RALT E  &hm RMETA I  &kp COMMA
 &kp LPAR    &kp Q        &kp X        &kp M          &kp C        &kp V        &kp K        &kp P       &kp DOT       &kp MINUS    &kp SLASH    &kp RPAR
                                       &kp BACKSPACE  &lt 3 SPACE  &kp ENTER    &lt 6 SPACE  &lt 2 TAB   &lt 1 DELETE
-            >;                            
+            >;
         };
 
         Media {
@@ -220,8 +229,8 @@
         Base_DE {
             label = "Base_DE";
             bindings = <
-            &kp DE_B        &kp DE_L        &kp DE_D          &kp DE_W        &kp DE_Y        &kp DE_SQT      &kp DE_F       &kp DE_O         &kp DE_U        &kp DE_J        &mo 4
-&kp ESCAPE  &hm LMETA DE_N  &hm LALT DE_R  &hm LSHFT DE_T    &hm LCTRL DE_S   &kp DE_G        &kp DE_Z        &hm RCTRL DE_H  &hm RSHFT DE_A   &hm RALT DE_E  &hm RMETA DE_I  &kp DE_COMMA
+            &kp DE_B        &kp DE_L        &kp DE_D          &kp DE_W        &kp DE_Z        &kp DE_SQT      &kp DE_F       &kp DE_O         &kp DE_U        &kp DE_J        &mo 4
+&kp ESCAPE  &hm LMETA DE_N  &hm LALT DE_R  &hm LSHFT DE_T    &hm LCTRL DE_S   &kp DE_G        &kp DE_Y        &hm RCTRL DE_H  &hm RSHFT DE_A   &hm RALT DE_E  &hm RMETA DE_I  &kp DE_COMMA
 &kp DE_LPAR &kp DE_Q        &kp DE_X        &kp DE_M          &kp DE_C        &kp DE_V        &kp DE_K        &kp DE_P       &kp DE_DOT       &kp DE_MINUS    &kp DE_FSLH     &kp DE_RPAR
                                           &kp BACKSPACE  &lt 7 SPACE  &kp ENTER    &lt 6 SPACE  &lt 6 TAB   &lt 1 DELETE
             >;                            
@@ -233,7 +242,7 @@
           &trans  &kp LC(RIGHT)  &trans  &kp LS(LC(DE_V))  &kp LC(LEFT)    &trans    &kp END   &kp PG_UP  &kp LC(DE_C)  &trans     &trans
 &kp DE_LBRC  &trans  &trans         &trans  &trans             &trans          &kp CAPS  &kp LEFT  &kp DOWN   &kp UP        &kp RIGHT  &kp DE_RBRC
 &kp DE_LBKT  &trans  &kp DEL        &trans  &kp PG_DN          &trans          &trans    &kp HOME  &kp DE_LT  &kp DE_GT     &kp LC(DE_F)  &kp DE_RBKT
-                                  &trans  &fsu           &trans          &trans    &trans    &trans
+                                  &trans  &fsu_de        &trans          &trans    &trans    &trans
             >;
         };
 
