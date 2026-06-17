@@ -21,9 +21,9 @@
 #define Nav         2
 #define NumSym      3
 #define Game        4
-#define Base_DE     8
-#define Nav_DE      10
-#define NumSym_DE   11
+#define Base_DE     5
+#define Nav_DE      6
+#define NumSym_DE   7
 
 &mt {
     quick-tap-ms = <100>;
@@ -223,7 +223,7 @@
             &kp DE_B        &kp DE_L        &kp DE_D          &kp DE_W        &kp DE_Y        &kp DE_SQT      &kp DE_F       &kp DE_O         &kp DE_U        &kp DE_J        &mo 4
 &kp ESCAPE  &hm LMETA DE_N  &hm LALT DE_R  &hm LSHFT DE_T    &hm LCTRL DE_S   &kp DE_G        &kp DE_Z        &hm RCTRL DE_H  &hm RSHFT DE_A   &hm RALT DE_E  &hm RMETA DE_I  &kp DE_COMMA
 &kp DE_LPAR &kp DE_Q        &kp DE_X        &kp DE_M          &kp DE_C        &kp DE_V        &kp DE_K        &kp DE_P       &kp DE_DOT       &kp DE_MINUS    &kp DE_FSLH     &kp DE_RPAR
-                                          &kp BACKSPACE  &lt NumSym_DE SPACE  &kp ENTER    &lt 6 SPACE  &lt Nav_DE TAB   &lt 1 DELETE
+                                          &kp BACKSPACE  &lt 7 SPACE  &kp ENTER    &lt 6 SPACE  &lt 6 TAB   &lt 1 DELETE
             >;                            
         };
 
