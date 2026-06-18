@@ -21,9 +21,6 @@
 #define Nav         2
 #define NumSym      3
 #define Game        4
-#define Base_DE     5
-#define Nav_DE      6
-#define NumSym_DE   7
 
 &mt {
     quick-tap-ms = <100>;
@@ -48,24 +45,6 @@
             tapping-term-ms = <150>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
-        };
-
-        fsu: flip_shift_underscore {
-            compatible = "zmk,behavior-mod-morph";
-            label = "FLIP_SHIFT_UNDERSCORE";
-            bindings = <&kp UNDER>, <&kp MINUS>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        fsu_de: flip_shift_underscore_de {
-            compatible = "zmk,behavior-mod-morph";
-            label = "FLIP_SHIFT_UNDERSCORE_DE";
-            bindings = <&kp DE_UNDER>, <&kp DE_MINUS>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         f1s: f1or11 {
@@ -139,20 +118,6 @@
             key-positions = <38 39 40>;
             timeout-ms = <30>;
         };
-
-        combo_base_de_toggle {
-            bindings = <&tog Base_DE>;
-            key-positions = <35 36 37>;
-            timeout-ms = <30>;
-            layers = <Base>;
-        };
-
-        combo_base_toggle {
-            bindings = <&tog Base>;
-            key-positions = <35 36 37>;
-            timeout-ms = <30>;
-            layers = <Base_DE>;
-        };
     };
 
     macros {
@@ -177,7 +142,7 @@
         Base {
             label = "Base";
             bindings = <
-            &kp B        &kp L        &kp D          &kp W        &kp Z        &kp SQT      &kp F       &kp O         &kp U        &kp J        &mo 4
+            &kp B        &kp L        &kp D          &kp W        &kp Z        &kp KC_SCLN  &kp F       &kp O         &kp U        &kp J        &mo 4
 &kp ESCAPE  &hm LMETA N  &hm LALT R  &hm LSHFT T    &hm LCTRL S   &kp G        &kp Y        &hm RCTRL H  &hm RSHFT A   &hm RALT E  &hm RMETA I  &kp COMMA
 &kp LPAR    &kp Q        &kp X        &kp M          &kp C        &kp V        &kp K        &kp P       &kp DOT       &kp MINUS    &kp SLASH    &kp RPAR
                                       &kp BACKSPACE  &lt 3 SPACE  &kp ENTER    &lt 6 SPACE  &lt 2 TAB   &lt 1 DELETE
@@ -200,7 +165,7 @@
           &trans  &kp LC(RIGHT)  &trans  &kp LS(LC(V))  &kp LC(LEFT)    &trans    &kp END   &kp PG_UP  &kp LC(C)  &trans     &trans
 &kp LBRC  &trans  &trans         &trans  &trans         &trans          &kp CAPS  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp RIGHT_BRACE
 &kp LBKT  &trans  &kp DEL        &trans  &kp PG_DN      &trans          &trans    &kp HOME  &kp LT     &kp GT     &kp LC(F)  &kp RBKT
-                                 &trans  &fsu           &trans          &trans    &trans    &trans
+                                 &trans  &trans         &trans          &trans    &trans    &trans
             >;
         };
 
@@ -210,7 +175,7 @@
            &kp LG(N1)    &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &kp LG(N6)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp MINUS     &trans
 &kp EQUAL  &hm LSHFT N9  &kp N7      &kp N0      &kp N3      &kp F3        &f1s        &kp N1      &kp N2      &kp N4      &hm RSHFT N8  &kp GRAVE
 &trans     &kp F9        &kp F7      &kp F10     &kp N5      &kp F5        &kp F6      &kp N6      &f2s        &kp F4      &kp F8        &kp BSLH
-                                     &trans      &trans      &trans        &trans      &trans      &trans
+                                     &trans      &kp SQT     &trans        &trans      &trans      &trans
             >;
         };
 
@@ -221,38 +186,6 @@
 &kp ESCAPE  &kp N        &kp R        &kp T          &kp S        &kp G        &trans       &trans      &trans        &trans       &trans       &trans
 &kp LPAR    &kp Q        &kp X        &kp M          &kp C        &kp V        &trans       &trans      &trans        &trans       &trans       &trans
                                       &kp BACKSPACE  &kp SPACE    &kp ENTER  &trans       &trans      &trans
-            >;
-        };
-
-
-
-        Base_DE {
-            label = "Base_DE";
-            bindings = <
-            &kp DE_B        &kp DE_L        &kp DE_D          &kp DE_W        &kp DE_Z        &kp DE_SQT      &kp DE_F       &kp DE_O         &kp DE_U        &kp DE_J        &mo 4
-&kp ESCAPE  &hm LMETA DE_N  &hm LALT DE_R  &hm LSHFT DE_T    &hm LCTRL DE_S   &kp DE_G        &kp DE_Y        &hm RCTRL DE_H  &hm RSHFT DE_A   &hm RALT DE_E  &hm RMETA DE_I  &kp DE_COMMA
-&kp DE_LPAR &kp DE_Q        &kp DE_X        &kp DE_M          &kp DE_C        &kp DE_V        &kp DE_K        &kp DE_P       &kp DE_DOT       &kp DE_MINUS    &kp DE_FSLH     &kp DE_RPAR
-                                          &kp BACKSPACE  &lt 7 SPACE  &kp ENTER    &lt 6 SPACE  &lt 6 TAB   &lt 1 DELETE
-            >;                            
-        };
-
-        Nav_DE {
-            label = "Nav_DE";
-            bindings = <
-          &trans  &kp LC(RIGHT)  &trans  &kp LS(LC(DE_V))  &kp LC(LEFT)    &trans    &kp END   &kp PG_UP  &kp LC(DE_C)  &trans     &trans
-&kp DE_LBRC  &trans  &trans         &trans  &trans             &trans          &kp CAPS  &kp LEFT  &kp DOWN   &kp UP        &kp RIGHT  &kp DE_RBRC
-&kp DE_LBKT  &trans  &kp DEL        &trans  &kp PG_DN          &trans          &trans    &kp HOME  &kp DE_LT  &kp DE_GT     &kp LC(DE_F)  &kp DE_RBKT
-                                  &trans  &fsu_de        &trans          &trans    &trans    &trans
-            >;
-        };
-
-        NumSym_DE {
-            label = "NumSym_DE";
-            bindings = <
-           &kp LG(DE_N1)    &kp LG(DE_N2)  &kp LG(DE_N3)  &kp LG(DE_N4)  &kp LG(DE_N5)    &kp LG(DE_N6)  &kp LG(DE_N7)  &kp LG(DE_N8)  &kp LG(DE_N9)  &kp DE_MINUS     &trans
-&kp DE_EQUAL  &hm LSHFT DE_N9  &kp DE_N7      &kp DE_N0      &kp DE_N3      &kp F3        &f1s        &kp DE_N1      &kp DE_N2      &kp DE_N4      &hm RSHFT DE_N8  &kp DE_GRAVE
-&trans     &kp F9        &kp F7      &kp F10     &kp DE_N5      &kp F5        &kp F6      &kp DE_N6      &f2s        &kp F4      &kp F8        &kp DE_BSLH
-                                      &trans      &trans      &trans        &trans      &trans      &trans
             >;
         };
     };
