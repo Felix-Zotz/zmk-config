@@ -115,7 +115,7 @@
 
         combo_game_toggle {
             bindings = <&tog Game>;
-            key-positions = <38 39 40>;
+            key-positions = <35 36 37>;
             timeout-ms = <30>;
         };
     };
@@ -145,7 +145,7 @@
             &kp B        &kp L        &kp D          &kp W        &kp Z        &kp KC_SCLN  &kp F       &kp O         &kp U        &kp J        &mo 4
 &kp ESCAPE  &hm LMETA N  &hm LALT R  &hm LSHFT T    &hm LCTRL S   &kp G        &kp Y        &hm RCTRL H  &hm RSHFT A   &hm RALT E  &hm RMETA I  &kp COMMA
 &kp LPAR    &kp Q        &kp X        &kp M          &kp C        &kp V        &kp K        &kp P       &kp DOT       &kp MINUS    &kp SLASH    &kp RPAR
-                                      &kp BACKSPACE  &lt 3 SPACE  &kp ENTER    &lt 6 SPACE  &lt 2 TAB   &lt 1 DELETE
+                                      &kp BACKSPACE  &lt 3 SPACE  &kp ENTER    &lt 2 SPACE  &lt 1 TAB   &kp DELETE
             >;
         };
 
