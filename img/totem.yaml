@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: totem}
 layers:
   Base:
-  - [B, L, D, W, Z, KC SCLN, F, O, U, J, Game, ESCAPE]
+  - [B, L, D, W, Z, ;, F, O, U, J, Game, ESCAPE]
   - - {t: N, h: LMETA}
     - {t: R, h: LALT}
     - {t: T, h: LSHFT}
