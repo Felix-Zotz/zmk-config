@@ -294,7 +294,7 @@ path.combo {
 </g>
 <g transform="translate(480, 270) rotate(-30.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">&amp;</text>
+<text x="0" y="0" class="key tap">Sft+7</text>
 <a href="#Nav">
 <text x="0" y="24" class="key hold layer-activator">Nav</text>
 </a></g>
