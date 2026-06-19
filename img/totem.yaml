@@ -94,7 +94,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   NumSym:
-  - [F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F0]
+  - [F2, F3, F4, F4, F5, F6, F7, F8, F9, F10, F11, F1]
   - - {t: '0', h: LMETA}
     - {t: '1', h: LALT}
     - {t: '2', h: LSHFT}
