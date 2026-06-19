@@ -109,7 +109,7 @@
             key-positions = <12 21>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <Base Base_DE>;
+            layers = <Base>;
         };
 
         combo_game_toggle {
