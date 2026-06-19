@@ -17,7 +17,7 @@ layers:
   - [Q, X, M, C, V, K, P, ',', ., '-', ), BACKSPACE]
   - - {t: SPACE, h: NumSym}
     - ENTER
-    - {t: Sft+7, h: Nav}
+    - {t: '&', h: Nav}
     - {t: TAB, h: Media}
     - DELETE
   Media:
