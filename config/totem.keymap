@@ -9,6 +9,8 @@
 //                                                                      ▀  ▀  ▀
 //
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+//
+// This keymap is meant to be used with the EurKEY layout.
 
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
@@ -142,13 +144,13 @@
             label = "Base";
             bindings = <
             &kp B        &kp L       &kp D          &kp W        &kp Z        &kp SEMI         &kp F        &kp O        &kp U       &kp J        &mo 4
-&kp ESCAPE  &hm LMETA N  &hm LALT R  &hm LSHFT T    &hm LCTRL S  &kp G        &kp Y            &hm RCTRL H  &hm RSHFT A  &hm RALT E  &hm RMETA I  &kp SLASH
+&kp ESCAPE  &hm LMETA N  &hm LALT R  &hm LSHFT T    &hm LCTRL S  &kp G        &kp Y            &hm RCTRL H  &hm RSHFT A  &hm LALT E  &hm RMETA I  &kp SLASH
 &kp LPAR    &kp Q        &kp X       &kp M          &kp C        &kp V        &kp K            &kp P        &kp COMMA    &kp DOT     &kp MINUS    &kp RPAR
-                                     &kp BACKSPACE  &lt 3 SPACE  &kp ENTER    &lt 1 AMPERSAND  &lt 2 TAB    &kp DELETE
+                                     &kp BACKSPACE  &lt 3 SPACE  &kp ENTER    &lt RALT AMPERSAND  &lt 2 TAB    &kp DELETE
             >;
         };
 
-        Media {
+        Media { // TODO
             label = "Media";
             bindings = <
         &trans  &trans  &cps      &trans    &kp C_BRI_UP   &trans    &kp C_MUTE  &kp C_VOL_UP  &kp C_VOL_UP  &trans      &trans
@@ -171,10 +173,10 @@
         NumSym {
             label = "NumSym";
             bindings = <
-        &kp F2        &kp F3       &kp F4        &kp F4  &kp F5  &kp F6  &kp F7  &kp F8        &kp F9        &kp F10      &kp F11
-&kp F1  &hm LMETA N0  &hm LALT N1  &hm LSHFT N2  &hm LCTRL N3    &kp N4  &kp N5  &hm RCTRL N6  &hm RSHFT N7  &hm RALT N8  &hm RMETA N9  &kp F12
-&trans  &kp GRAVE        &kp APOS  &kp LBKT      &kp LBRC        &trans  &trans  &kp RBRC      &kp RBKT      &kp EQUAL    &kp PLUS      &kp BSLH
-                                   &trans        &trans          &trans  &trans  &trans        &trans
+        &kp F2        &kp F3       &kp F4        &kp F4  &kp F5  &kp F6  &kp F7           &kp F8        &kp F9        &kp F10      &kp F11
+&kp F1  &hm LMETA N0  &hm LALT N1  &hm LSHFT N2  &hm LCTRL N3    &kp N4  &kp N5           &hm RCTRL N6  &hm RSHFT N7  &hm LALT N8  &hm RMETA N9  &kp F12
+&trans  &kp GRAVE        &kp APOS  &kp LBKT      &kp LBRC        &trans  &trans           &kp RBRC      &kp RBKT      &kp EQUAL    &kp PLUS      &kp BSLH
+                                   &trans        &trans          &trans  &lt 1 AMPERSAND  &trans        &trans
             >;
         };
 
