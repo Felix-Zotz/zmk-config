@@ -10,14 +10,14 @@ layers:
     - Y
     - {t: H, h: RCTRL}
     - {t: A, h: RSHFT}
-    - {t: E, h: RALT}
+    - {t: E, h: LALT}
     - {t: I, h: RMETA}
     - /
     - (
   - [Q, X, M, C, V, K, P, ',', ., '-', ), BACKSPACE]
   - - {t: SPACE, h: NumSym}
     - ENTER
-    - {t: '&', h: Media}
+    - {t: '&', h: RALT}
     - {t: TAB, h: Nav}
     - DELETE
   Media:
@@ -59,7 +59,7 @@ layers:
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {type: held}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   Nav:
@@ -114,14 +114,14 @@ layers:
     - '5'
     - {t: '6', h: RCTRL}
     - {t: '7', h: RSHFT}
-    - {t: '8', h: RALT}
+    - {t: '8', h: LALT}
     - {t: '9', h: RMETA}
     - F12
     - {t: ▽, type: trans}
   - - '`'
     - ''''
-    - '{'
     - '['
+    - '{'
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - '}'
@@ -132,7 +132,7 @@ layers:
     - {t: ▽, type: trans}
   - - {type: held}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - {t: '&', h: Media}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   Game:
