@@ -87,7 +87,7 @@ layers:
     - RIGHT
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
+  - - LCTRL
     - '&msc SCRL_DOWN'
     - '&mmv MOVE_DOWN'
     - '&msc SCRL_UP'
