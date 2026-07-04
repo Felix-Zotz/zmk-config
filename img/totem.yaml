@@ -30,7 +30,7 @@ layers:
     - BRI UP
     - MUTE
     - VOL UP
-    - '&trans s'
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - '&msc SCRL_LEFT'
