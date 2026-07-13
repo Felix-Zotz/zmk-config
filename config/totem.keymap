@@ -183,9 +183,9 @@
         Game {
             label = "Game";
             bindings = <
-            &kp B           &kp L          &kp W      &kp W      &kp Z   &trans  &trans  &trans  &trans  &trans  &trans
-&kp ESCAPE  &kp N           &kp A          &kp S      &kp D      &kp G   &trans  &trans  &trans  &trans  &trans  &trans
-&kp LPAR    &kp LEFT_SHIFT  &kp X          &kp M      &kp C      &kp V   &trans  &trans  &trans  &trans  &trans  &trans
+            &kp B           &kp L          &kp D      &kp W      &kp Z   &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESCAPE  &kp N           &kp A          &kp W      &kp D      &kp G   &trans  &trans  &trans  &trans  &trans  &trans
+&kp LPAR    &kp LEFT_SHIFT  &kp X          &kp S      &kp C      &kp V   &trans  &trans  &trans  &trans  &trans  &trans
                             &kp BACKSPACE  &kp SPACE  &kp ENTER  &trans  &trans  &trans
             >;
         };
