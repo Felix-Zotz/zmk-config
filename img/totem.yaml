@@ -149,7 +149,7 @@ layers:
   Game:
   - - B
     - L
-    - D
+    - W
     - W
     - Z
     - {t: ▽, type: trans}
@@ -160,9 +160,9 @@ layers:
     - {type: held}
     - ESCAPE
   - - N
-    - R
-    - T
+    - A
     - S
+    - D
     - G
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
