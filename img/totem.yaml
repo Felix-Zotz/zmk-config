@@ -149,7 +149,7 @@ layers:
   Game:
   - - B
     - L
-    - W
+    - D
     - W
     - Z
     - {t: ▽, type: trans}
@@ -161,7 +161,7 @@ layers:
     - ESCAPE
   - - N
     - A
-    - S
+    - W
     - D
     - G
     - {t: ▽, type: trans}
@@ -173,7 +173,7 @@ layers:
     - (
   - - LEFT SHIFT
     - X
-    - M
+    - S
     - C
     - V
     - {t: ▽, type: trans}
