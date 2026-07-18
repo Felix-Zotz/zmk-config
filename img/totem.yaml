@@ -160,9 +160,9 @@ layers:
     - {type: held}
     - ESCAPE
   - - N
-    - A
-    - W
-    - D
+    - R
+    - T
+    - S
     - G
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -170,10 +170,10 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - (
-  - - LEFT SHIFT
+    - '9'
+  - - Q
     - X
-    - S
+    - M
     - C
     - V
     - {t: ▽, type: trans}
