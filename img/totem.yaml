@@ -171,7 +171,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - TAB
-  - - Q
+  - - LEFT SHIFT
     - X
     - M
     - C
