@@ -183,10 +183,10 @@
         Game {
             label = "Game";
             bindings = <
-            &kp B           &kp L  &kp D          &kp W      &kp Z      &trans  &trans  &trans  &trans  &trans  &trans
-&kp ESCAPE  &kp N           &kp R  &kp T          &kp S      &kp G      &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB     &kp LEFT_SHIFT  &kp X  &kp M          &kp C      &kp V      &trans  &trans  &trans  &trans  &trans  &trans
-                                   &kp BACKSPACE  &kp SPACE  &kp ENTER  &trans  &trans  &trans
+            &kp B           &kp L  &kp D          &kp W      &kp Z      &kp SEMI       &kp F    &kp O      &kp U    &kp J      &trans
+&kp ESCAPE  &kp N           &kp R  &kp T          &kp S      &kp G      &kp Y          &kp H    &kp A      &kp E    &kp I      &kp SLASH
+&kp TAB     &kp LEFT_SHIFT  &kp X  &kp M          &kp C      &kp V      &kp K          &kp P    &kp COMMA  &kp DOT  &kp MINUS  &kp F13
+                                   &kp BACKSPACE  &kp SPACE  &kp ENTER  &kp AMPERSAND  &kp F14  &kp DELETE
             >;
         };
     };
