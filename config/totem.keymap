@@ -163,10 +163,10 @@
         Nav {
             label = "Nav";
             bindings = <
-        &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp CAPS  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &kp HOME  &trans    &trans  &kp END    &trans
-                        &trans  &trans  &trans  &trans    &trans    &trans
+        &trans  &trans  &trans  &trans  &trans  &trans    &kp LC(LEFT)  &trans        &trans       &kp LC(RIGHT)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp CAPS  &kp LEFT      &kp DOWN      &kp UP       &kp RIGHT      &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &kp HOME      &kp LC(END)   &kp LC(HOME) &kp END        &trans
+                        &trans  &trans  &trans  &trans    &trans        &trans
             >;
         };
 
