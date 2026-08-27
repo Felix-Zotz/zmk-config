@@ -64,9 +64,9 @@ layers:
     - {t: ▽, type: trans}
   Nav:
   - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - Ctl+Sft+E
+    - '&vscode_git_gg'
+    - Ctl+`
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - Ctl+LEFT
@@ -88,9 +88,9 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - Ctl+B
+    - Ctl+J
+    - Ctl+Alt+B
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - HOME
