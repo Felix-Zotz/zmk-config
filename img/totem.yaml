@@ -65,7 +65,7 @@ layers:
   Nav:
   - - {t: ▽, type: trans}
     - Ctl+Sft+E
-    - '&vscode_git_gg'
+    - Ctl+Sft+G
     - Ctl+`
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
