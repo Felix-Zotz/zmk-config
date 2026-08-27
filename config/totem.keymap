@@ -121,16 +121,6 @@
         };
     };
 
-macros {
-        vscode_git_gg: vscode_git_gg {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <25>;
-            tap-ms = <25>;
-            bindings = <&kp LC(LS(G))>
-                     , <&kp G>;
-        };
-    };
     keymap {
         compatible = "zmk,keymap";
 
@@ -157,7 +147,7 @@ macros {
         Nav {
             label = "Nav";
             bindings = <
-        &trans  &kp LC(LS(E))  &vscode_git_gg   &kp LC(GRAVE)   &trans    &trans    &kp LC(LEFT)  &trans       &trans        &kp LC(RIGHT)  &trans
+        &trans  &kp LC(LS(E))  &kp LC(LS(G))   &kp LC(GRAVE)   &trans    &trans    &kp LC(LEFT)  &trans       &trans        &kp LC(RIGHT)  &trans
 &trans  &trans  &trans         &trans           &trans          &trans    &kp CAPS  &kp LEFT      &kp DOWN     &kp UP        &kp RIGHT      &trans
 &trans  &trans  &kp LC(B)      &kp LC(J)        &kp LC(LA(B))   &trans    &trans    &kp HOME      &kp LC(END)  &kp LC(HOME)  &kp END        &trans
                                &trans           &trans          &trans    &trans    &trans        &trans
