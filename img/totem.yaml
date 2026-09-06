@@ -54,7 +54,7 @@ layers:
     - BRI DEC
     - MUTE
     - VOL DN
-    - {t: ▽, type: trans}
+    - PSCRN
     - {t: ▽, type: trans}
     - '&mkp MB2'
   - - '&mkp MB1'
